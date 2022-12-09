@@ -1,0 +1,40 @@
+.features {
+  &__title {
+    text-align: center;
+  }
+
+  &__examples-list {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.features__item {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+}
+
+.features__img {
+  display: block;
+}
+.features__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.features__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
