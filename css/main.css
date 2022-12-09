@@ -282,13 +282,21 @@ body {
 }
 
 h2 {
+  margin: 0;
   color: #212121;
-  font-family: "Roboto";
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-top: 0;
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1199.98px) {
+  h2 {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 a {
@@ -364,7 +372,7 @@ p {
 }
 @media screen and (min-width: 1199.98px) {
   .privilege__item {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -567,21 +575,48 @@ p {
   text-align: center;
 }
 
-.team__list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 767.98px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .team__list {
+    flex-wrap: nowrap;
+  }
 }
 
 .team__item {
-  width: calc((100% - 90px) / 4);
   background-color: #ffffff;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 767.98px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
 .team__info {
-  padding: 30px 0 30px 0;
+  padding: 30px 0 24px 0;
+}
+@media screen and (min-width: 1199.98px) {
+  .team__info {
+    padding: 30px 0 30px 0;
+  }
 }
 
 .team__info-title {
