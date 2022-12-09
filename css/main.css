@@ -676,13 +676,22 @@ p {
 
 .clients__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients__item {
-  width: calc((100% - 150px) / 6);
-  text-align: center;
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 767.98px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
