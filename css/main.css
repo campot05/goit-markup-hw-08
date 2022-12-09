@@ -262,9 +262,23 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 479.98px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 h2 {
@@ -298,6 +312,11 @@ button {
 section {
   padding: 94px 0px;
 }
+@media screen and (max-width: 1199.98px) {
+  section {
+    padding: 60px 0;
+  }
+}
 
 ul {
   padding: 0;
@@ -305,8 +324,8 @@ ul {
   list-style: none;
 }
 
-.privilege {
-  padding-bottom: 0;
+p {
+  margin: 0;
 }
 
 .privilege__title {
@@ -320,13 +339,33 @@ ul {
   margin-bottom: 50px;
 }
 
-.privilege__benefits-list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 767.98px) {
+  .privilege__benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .privilege__benefits-list {
+    flex-wrap: nowrap;
+  }
 }
 
-.privilege__item {
-  max-width: calc((100% - 90px) / 4);
+@media screen and (max-width: 767.98px) {
+  .privilege__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .privilege__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .privilege__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .privilege__block {
@@ -336,6 +375,7 @@ ul {
   align-items: center;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .privilege__info-title {
@@ -346,6 +386,11 @@ ul {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767.98px) {
+  .privilege__info-title {
+    text-align: center;
+  }
 }
 
 .privilege__info-text {
@@ -474,6 +519,11 @@ ul {
 .features__examples-list {
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .features {
+    display: none;
+  }
 }
 
 .features__item {
