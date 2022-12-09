@@ -3,8 +3,9 @@
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 27px;
-  line-height: 1.2;
+
+  font-size: 24px;
+  line-height: calc(28 / 22);
   // .logo__text
   // .logo__text--black
   &__studio {
@@ -12,5 +13,10 @@
   }
   &__studio-footer {
     color: $white-color;
+  }
+
+  @media screen and(min-width:$desktop) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
   }
 }
