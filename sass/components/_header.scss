@@ -6,21 +6,41 @@
     align-items: center;
   }
 
-  &__menu {
-    margin-left: 93px;
-  }
-
   &__menu-list {
     display: flex;
     gap: 50px;
   }
-  &__contacts-list {
-    display: flex;
+}
 
-    margin-left: auto;
+.header__menu {
+  // margin-left: 93px;
+  margin-left: 87px;
+
+  @media screen and(max-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__contacts-list {
+  //  display: flex;
+  margin-left: auto;
+
+  @media screen and(min-width: $desktop) {
+    display: flex;
+  }
+  @media screen and(max-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__contacts-item {
+  @media screen and(min-width: $tablet) and (max-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
-  &__contacts-item {
+  @media screen and(min-width: $desktop) {
     &:not(:first-child) {
       margin-left: 50px;
     }
