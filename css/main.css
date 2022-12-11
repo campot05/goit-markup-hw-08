@@ -1013,6 +1013,12 @@ p {
   letter-spacing: 0.02em;
   color: #212121;
 }
+.mobile__menu-link:hover, .mobile__menu-link:focus {
+  color: #2196f3;
+}
+.mobile__menu-link--active {
+  color: #2196f3;
+}
 
 .mobile__contact-list {
   margin-bottom: 64px;

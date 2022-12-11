@@ -16,12 +16,27 @@
     <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-body>
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo"
           >Web<span class="logo__studio">Studio</span></a
         >
+        <button type="button" class="menu-button" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            aria-label="Мобильное меню"
+          >
+            <use
+              class="icon-burger"
+              href="./image/symbol-defs.svg#burger"
+            ></use>
+            <use class="icon-cross" href="./image/symbol-defs.svg#cross"></use>
+          </svg>
+        </button>
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
@@ -278,70 +293,72 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__info">
-          <a href="#" class="logo"
-            >Web<span class="logo__studio-footer">Studio</span></a
-          >
-          <address class="footer__adress">
-            <ul class="footer__adress-list">
-              <li class="footer__adress-item">
-                <a
-                  href="https://goo.gl/maps/8N9khmtmoE5xAhKt7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="footer__adress-link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__wrapper">
+          <div class="footer__info">
+            <a href="#" class="logo"
+              >Web<span class="logo__studio-footer">Studio</span></a
+            >
+            <address class="footer__adress">
+              <ul class="footer__adress-list">
+                <li class="footer__adress-item">
+                  <a
+                    href="https://goo.gl/maps/8N9khmtmoE5xAhKt7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__adress-link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__adress-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer__adress-link footer__adress-link-gray"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__adress-item">
+                  <a
+                    href="tel:+380961111111"
+                    class="footer__adress-link footer__adress-link-gray"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__join">
+            <h3 class="footer__title">приєднуйтесь</h3>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="" class="footer__social-link">
+                  <svg class="footer__social-icon" width="20" height="20">
+                    <use href="./image/symbol-defs.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__adress-item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="footer__adress-link footer__adress-link-gray"
-                  >info@devstudio.com</a
-                >
+              <li class="footer__social-item">
+                <a href="" class="footer__social-link">
+                  <svg class="footer__social-icon" width="20" height="20">
+                    <use href="./image/symbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__adress-item">
-                <a
-                  href="tel:+380961111111"
-                  class="footer__adress-link footer__adress-link-gray"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer__social-item">
+                <a href="" class="footer__social-link">
+                  <svg class="footer__social-icon" width="20" height="20">
+                    <use href="./image/symbol-defs.svg#facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="" class="footer__social-link">
+                  <svg class="footer__social-icon" width="20" height="20">
+                    <use href="./image/symbol-defs.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__join">
-          <h3 class="footer__title">приєднуйтесь</h3>
-          <ul class="footer__social-list">
-            <li class="footer__social-item">
-              <a href="" class="footer__social-link">
-                <svg class="footer__social-icon" width="20" height="20">
-                  <use href="./image/symbol-defs.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="" class="footer__social-link">
-                <svg class="footer__social-icon" width="20" height="20">
-                  <use href="./image/symbol-defs.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="" class="footer__social-link">
-                <svg class="footer__social-icon" width="20" height="20">
-                  <use href="./image/symbol-defs.svg#facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="" class="footer__social-link">
-                <svg class="footer__social-icon" width="20" height="20">
-                  <use href="./image/symbol-defs.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="footer__form">
           <div class="footer__form-field">
@@ -351,7 +368,7 @@
             <input
               type="email"
               name="footer-email"
-              id="email"
+              id="footer-email"
               placeholder="E-mail"
               class="footer__input"
             />
@@ -365,5 +382,52 @@
         </form>
       </div>
     </footer>
+    <div class="mobile" id="menu-container" data-menu>
+      <nav class="mobile__menu">
+        <ul class="mobile__menu-list">
+          <li class="mobile__menu-item">
+            <a href="./index.html" class="mobile__menu-link">Студія</a>
+          </li>
+          <li class="mobile__menu-item">
+            <a
+              href="./portfolio.html"
+              class="mobile__menu-link mobile__menu-link--active"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile__menu-item">
+            <a href="#" class="mobile__menu-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile__contact-list">
+        <li class="mobile__contact-item">
+          <a href="tel:+380961111111" class="mobile__contact-mail"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile__contact-item">
+          <a href="mailto:info@devstudio.com" class="mobile__contact-tel"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile__social-list">
+        <li class="mobile__social-item">
+          <a href="" class="mobile__social-link">Instagram</a>
+        </li>
+        <li class="mobile__social-item">
+          <a href="" class="mobile__social-link">Twitter</a>
+        </li>
+        <li class="mobile__social-item">
+          <a href="" class="mobile__social-link">Facebook</a>
+        </li>
+        <li class="mobile__social-item">
+          <a href="" class="mobile__social-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
