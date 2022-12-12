@@ -157,7 +157,8 @@
           <ul class="features__examples-list">
             <li class="features__item">
               <img
-                src="image/weDo/img1.jpg"
+                srcset="./image/weDo/img1.jpg 1x, ./image/weDo/img1@2x.jpg 2x"
+                src="./image/weDo/img1.jpg"
                 alt="Створення сайтів"
                 width="370"
                 class="features__img"
@@ -168,8 +169,9 @@
             </li>
             <li class="features__item">
               <img
-                src="image/weDo/img2.jpg"
-                alt="Створення мобільних додатків"
+                srcset="./image/weDo/img2.jpg 1x, ./image/weDo/img2@2x.jpg 2x"
+                src="./image/weDo/img2.jpg"
+                alt="Створення сайтів"
                 width="370"
                 class="features__img"
               />
@@ -179,8 +181,9 @@
             </li>
             <li class="features__item">
               <img
-                src="image/weDo/img3.jpg"
-                alt="Створення дизайну сайтів"
+                srcset="./image/weDo/img3.jpg 1x, ./image/weDo/img3@2x.jpg 2x"
+                src="./image/weDo/img3.jpg"
+                alt="Створення сайтів"
                 width="370"
                 class="features__img"
               />
@@ -197,12 +200,38 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="image/ourTeam/img1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/ourTeam/img1_desk.jpg    1x,
+                    ./image/ourTeam/img1_desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/ourTeam/img1_tabl.jpg    1x,
+                    ./image/ourTeam/img1_tabl@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/ourTeam/img1_tel.jpg    1x,
+                    ./image/ourTeam/img1_tel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/ourTeam/img1-tel.jpg"
+                  alt="Ігор Дем'яненко"
+                  class="team__img"
+                />
+              </picture>
+
               <div class="team__info">
                 <h3 class="team__info-title">Ігор Дем'яненко</h3>
                 <p class="team__info-text">Product Designer</p>
@@ -239,12 +268,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="image/ourTeam/img2.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/ourTeam/img2_desk.jpg    1x,
+                    ./image/ourTeam/img2_desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/ourTeam/img2_tabl.jpg    1x,
+                    ./image/ourTeam/img2_tabl@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/ourTeam/img2_tel.jpg    1x,
+                    ./image/ourTeam/img2_tel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/ourTeam/img2-tel.jpg"
+                  alt="Ольга Рєпіна"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__info">
                 <h3 class="team__info-title">Ольга Рєпіна</h3>
                 <p class="team__info-text">Frontend Developer</p>
@@ -281,12 +335,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="image/ourTeam/img3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/ourTeam/img3_desk.jpg    1x,
+                    ./image/ourTeam/img3_desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/ourTeam/img3_tabl.jpg    1x,
+                    ./image/ourTeam/img3_tabl@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/ourTeam/img3_tel.jpg    1x,
+                    ./image/ourTeam/img3_tel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/ourTeam/img3-tel.jpg"
+                  alt="Микола Тарасов"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__info">
                 <h3 class="team__info-title">Микола Тарасов</h3>
                 <p class="team__info-text">Marketing</p>
@@ -323,12 +402,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="image/ourTeam/img4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/ourTeam/img4_desk.jpg    1x,
+                    ./image/ourTeam/img4_desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/ourTeam/img4_tabl.jpg    1x,
+                    ./image/ourTeam/img4_tabl@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/ourTeam/img4_tel.jpg    1x,
+                    ./image/ourTeam/img4_tel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/ourTeam/img4-tel.jpg"
+                  alt="Михайло Єрмаков"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__info">
                 <h3 class="team__info-title">Микола Тарасов</h3>
                 <p class="team__info-text">UI Designer</p>
